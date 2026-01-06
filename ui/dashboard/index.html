@@ -19,11 +19,14 @@
                     <h1>KMK SOVEREIGN</h1>
                     <p style="margin: 5px 0 0 0; opacity: 0.6; letter-spacing: 1px;">V1.0 GLOBAL OPERATIONAL CORE</p>
                 </div>
-                <div style="text-align: right;">
+                <div style="text-align: right; display: flex; align-items: center; gap: 20px;">
                     <div class="tab-nav">
                         <button class="tab-btn active" data-tab="command">Command Center</button>
                         <button class="tab-btn" data-tab="studio">Creative Studio</button>
                     </div>
+                    <button id="openSettings" class="tab-btn" style="padding: 10px;"><img
+                            src="https://img.icons8.com/ios-glyphs/30/E5B80B/settings--v1.png"
+                            style="width: 20px; vertical-align: middle;"></button>
                 </div>
             </div>
         </header>
@@ -159,6 +162,23 @@
             <div id="modalBody" class="dossier-viewer-content">
                 <!-- Content will be injected here -->
             </div>
+        </div>
+    </div>
+
+    <!-- System Settings Modal -->
+    <div id="settingsModal" class="modal-overlay">
+        <div class="modal-content">
+            <button class="modal-close">×</button>
+            <h2 style="color: var(--kmk-gold)">Sovereign System Settings</h2>
+            <p style="font-size: 0.8rem; opacity: 0.6; margin-bottom: 30px;">Keys are stored locally in your browser for
+                total sovereignty.</p>
+
+            <div class="settings-group">
+                <label>OpenAI API Key (DALL-E 3)</label>
+                <input type="password" id="openaiKey" class="settings-input" placeholder="sk-...">
+            </div>
+
+            <button class="save-btn" id="saveSettings">Sync Sovereign Keys</button>
         </div>
     </div>
 
