@@ -183,3 +183,138 @@ h2 {
 .pulse-icon {
     animation: pulse 2s infinite;
 }
+
+/* Tab System */
+.tab-nav {
+    display: flex;
+    gap: 15px;
+}
+
+.tab-btn {
+    background: var(--kmk-glass);
+    border: 1px solid var(--kmk-border);
+    color: #888;
+    padding: 10px 25px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.tab-btn.active {
+    border-color: var(--kmk-gold);
+    color: var(--kmk-gold);
+    box-shadow: 0 0 15px var(--kmk-gold-glow);
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+    animation: fadeIn 0.8s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Studio Module */
+.studio-input-area {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.studio-input {
+    flex: 1;
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid var(--kmk-border);
+    padding: 20px;
+    color: white;
+    font-family: inherit;
+    font-size: 1.1rem;
+    border-radius: 4px;
+}
+
+.studio-input:focus {
+    outline: none;
+    border-color: var(--kmk-gold);
+}
+
+.execute-btn {
+    background: var(--kmk-gold);
+    color: black;
+    border: none;
+    padding: 0 40px;
+    font-weight: 800;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: transform 0.2s ease;
+}
+
+.execute-btn:hover {
+    transform: scale(1.05);
+}
+
+.asset-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+.asset-card {
+    background: var(--kmk-onyx-light);
+    border: 1px solid var(--kmk-border);
+    border-radius: 4px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.asset-card:hover {
+    border-color: var(--kmk-gold);
+}
+
+.asset-preview {
+    width: 100%;
+    aspect-ratio: 16/9;
+    background: #111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.asset-placeholder {
+    color: #444;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+.asset-info {
+    padding: 20px;
+}
+
+.asset-title {
+    color: var(--kmk-gold);
+    font-size: 1rem;
+    margin: 0 0 5px 0;
+}
+
+.asset-meta {
+    font-size: 0.8rem;
+    opacity: 0.5;
+}
