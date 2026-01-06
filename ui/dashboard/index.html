@@ -20,101 +20,136 @@
                     <p style="margin: 5px 0 0 0; opacity: 0.6; letter-spacing: 1px;">V1.0 GLOBAL OPERATIONAL CORE</p>
                 </div>
                 <div style="text-align: right;">
-                    <span class="status-badge" style="margin-bottom: 5px;">System: Online</span><br>
-                    <span style="font-size: 0.8rem; opacity: 0.6;">Encryption: Void-Zero Active</span>
+                    <div class="tab-nav">
+                        <button class="tab-btn active" data-tab="command">Command Center</button>
+                        <button class="tab-btn" data-tab="studio">Creative Studio</button>
+                    </div>
                 </div>
             </div>
         </header>
 
-        <div class="grid-main">
-            <!-- Left Column: Production Archive -->
-            <section class="glass-panel">
-                <h2 style="color: var(--kmk-gold)">Sovereign Dossier Archive</h2>
-                <div class="dossier-grid">
-                    <!-- Project Alpha -->
-                    <div class="dossier-card">
-                        <span class="status-badge">Archived</span>
-                        <h3>PROJECT ALPHA</h3>
-                        <p>The New Renaissance: KMK Sovereign Pavilion 8K Blueprint.</p>
-                        <a href="#" class="view-reasoning" data-path="../../productions/alpha_dossier/dossier.md"
-                            style="color: var(--kmk-gold); text-decoration: none; font-size: 0.8rem; font-weight: bold;">VIEW
-                            REASONING →</a>
-                    </div>
-                    <!-- Supreme Directive -->
-                    <div class="dossier-card">
-                        <span class="status-badge">Supreme</span>
-                        <h3>SD-777</h3>
-                        <p>The Architect of Worlds: Deep-Space IMAX Visualization.</p>
-                        <a href="#" class="view-reasoning" data-path="../../productions/supreme_directive/dossier.md"
-                            style="color: var(--kmk-gold); text-decoration: none; font-size: 0.8rem; font-weight: bold;">VIEW
-                            REASONING →</a>
-                    </div>
-                    <!-- Project Beta -->
-                    <div class="dossier-card">
-                        <span class="status-badge">Economic</span>
-                        <h3>PROJ-BETA</h3>
-                        <p>The Liquid Asset: High-Frequency Sovereign Exchange UI.</p>
-                        <a href="#" class="view-reasoning" data-path="../../productions/beta_dossier/dossier.md"
-                            style="color: var(--kmk-gold); text-decoration: none; font-size: 0.8rem; font-weight: bold;">VIEW
-                            REASONING →</a>
-                    </div>
-                    <!-- Neon Sovereignty -->
-                    <div class="dossier-card"
-                        style="border-color: var(--kmk-gold); box-shadow: 0 0 15px var(--kmk-gold-glow);">
-                        <span class="status-badge" style="background: #fff; color: #000;">Latest</span>
-                        <h3>NEON SOVEREIGNTY</h3>
-                        <p>Workspace Evolution: 8K Arri Alexa Visual Spec.</p>
-                        <a href="#" class="view-reasoning" data-path="../../productions/neon_sovereignty/dossier.md"
-                            style="color: var(--kmk-gold); text-decoration: none; font-size: 0.8rem; font-weight: bold;">VIEW
-                            REASONING →</a>
-                    </div>
-                </div>
-            </section>
+        <div id="commandTab" class="tab-content active">
 
-            <!-- Right Column: Logic & Status -->
-            <div style="display: flex; flex-direction: column; gap: 40px;">
+            <div class="grid-main">
+                <!-- Left Column: Production Archive -->
                 <section class="glass-panel">
-                    <h2 style="color: var(--kmk-gold)">Cognitive Logic Feed</h2>
-                    <div class="logic-feed">
-                        <div class="logic-line"><span>[SYS]</span> Booting Sovereignty Logic...</div>
-                        <div class="logic-line"><span>[LTC]</span> Mapping Domain: Cinema Expert L10</div>
-                        <div class="logic-line"><span>[AUD]</span> Audit: Mediocrity Level = 0%</div>
-                        <div class="logic-line"><span>[OUT]</span> Rendering 8K Strategic Dossier...</div>
-                        <div class="logic-line pulse-icon" style="color: var(--kmk-gold);">_ Waiting for Directive...
+                    <h2 style="color: var(--kmk-gold)">Sovereign Dossier Archive</h2>
+                    <div class="dossier-grid">
+                        <!-- Project Alpha -->
+                        <div class="dossier-card">
+                            <span class="status-badge">Archived</span>
+                            <h3>PROJECT ALPHA</h3>
+                            <p>The New Renaissance: KMK Sovereign Pavilion 8K Blueprint.</p>
+                            <a href="#" class="view-reasoning" data-path="../../productions/alpha_dossier/dossier.md"
+                                style="color: var(--kmk-gold); text-decoration: none; font-size: 0.8rem; font-weight: bold;">VIEW
+                                REASONING →</a>
+                        </div>
+                        <!-- Supreme Directive -->
+                        <div class="dossier-card">
+                            <span class="status-badge">Supreme</span>
+                            <h3>SD-777</h3>
+                            <p>The Architect of Worlds: Deep-Space IMAX Visualization.</p>
+                            <a href="#" class="view-reasoning"
+                                data-path="../../productions/supreme_directive/dossier.md"
+                                style="color: var(--kmk-gold); text-decoration: none; font-size: 0.8rem; font-weight: bold;">VIEW
+                                REASONING →</a>
+                        </div>
+                        <!-- Project Beta -->
+                        <div class="dossier-card">
+                            <span class="status-badge">Economic</span>
+                            <h3>PROJ-BETA</h3>
+                            <p>The Liquid Asset: High-Frequency Sovereign Exchange UI.</p>
+                            <a href="#" class="view-reasoning" data-path="../../productions/beta_dossier/dossier.md"
+                                style="color: var(--kmk-gold); text-decoration: none; font-size: 0.8rem; font-weight: bold;">VIEW
+                                REASONING →</a>
+                        </div>
+                        <!-- Neon Sovereignty -->
+                        <div class="dossier-card"
+                            style="border-color: var(--kmk-gold); box-shadow: 0 0 15px var(--kmk-gold-glow);">
+                            <span class="status-badge" style="background: #fff; color: #000;">Latest</span>
+                            <h3>NEON SOVEREIGNTY</h3>
+                            <p>Workspace Evolution: 8K Arri Alexa Visual Spec.</p>
+                            <a href="#" class="view-reasoning" data-path="../../productions/neon_sovereignty/dossier.md"
+                                style="color: var(--kmk-gold); text-decoration: none; font-size: 0.8rem; font-weight: bold;">VIEW
+                                REASONING →</a>
                         </div>
                     </div>
                 </section>
 
+                <!-- Right Column: Logic & Status -->
+                <div style="display: flex; flex-direction: column; gap: 40px;">
+                    <section class="glass-panel">
+                        <h2 style="color: var(--kmk-gold)">Cognitive Logic Feed</h2>
+                        <div class="logic-feed">
+                            <div class="logic-line"><span>[SYS]</span> Booting Sovereignty Logic...</div>
+                            <div class="logic-line"><span>[LTC]</span> Mapping Domain: Cinema Expert L10</div>
+                            <div class="logic-line"><span>[AUD]</span> Audit: Mediocrity Level = 0%</div>
+                            <div class="logic-line"><span>[OUT]</span> Rendering 8K Strategic Dossier...</div>
+                            <div class="logic-line pulse-icon" style="color: var(--kmk-gold);">_ Waiting for
+                                Directive...
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="glass-panel">
+                        <h2 style="color: var(--kmk-gold)">Governance</h2>
+                        <p style="font-size: 0.9rem; margin-bottom: 20px;">The system is governed by the
+                            <strong>Sovereign
+                                Truth</strong> ethical directive.</p>
+                        <a href="#" class="dossier-card view-reasoning" data-path="../../CONSTITUTION.md"
+                            style="display: block; text-align: center; text-decoration: none;">
+                            <span style="color: var(--kmk-gold);">System Constitution →</span>
+                        </a>
+                    </section>
+                </div>
+            </div>
+
+            <div id="studioTab" class="tab-content">
                 <section class="glass-panel">
-                    <h2 style="color: var(--kmk-gold)">Governance</h2>
-                    <p style="font-size: 0.9rem; margin-bottom: 20px;">The system is governed by the <strong>Sovereign
-                            Truth</strong> ethical directive.</p>
-                    <a href="#" class="dossier-card view-reasoning" data-path="../../CONSTITUTION.md"
-                        style="display: block; text-align: center; text-decoration: none;">
-                        <span style="color: var(--kmk-gold);">System Constitution →</span>
-                    </a>
+                    <h2 style="color: var(--kmk-gold)">Sovereign Generative Engine</h2>
+                    <div class="studio-input-area">
+                        <input type="text" class="studio-input"
+                            placeholder="Execute Sovereign Directive (e.g., Generate 8K Concept for Project Neon)...">
+                        <button class="execute-btn">Execute Directive</button>
+                    </div>
+
+                    <h3
+                        style="color: var(--kmk-gold); font-size: 0.9rem; text-transform: uppercase; margin-bottom: 20px; opacity: 0.6;">
+                        Sovereign Output Feed</h3>
+                    <div class="asset-grid" id="assetGrid">
+                        <!-- Assets will appear here -->
+                        <div class="asset-card">
+                            <div class="asset-preview">
+                                <span class="asset-placeholder">Awaiting Directive...</span>
+                            </div>
+                            <div class="asset-info">
+                                <h4 class="asset-title">SYSTEM IDLE</h4>
+                                <span class="asset-meta">Engines Hot | GPU Cluster Standby</span>
+                            </div>
+                        </div>
+                    </div>
                 </section>
             </div>
+
+            <footer>
+                <div class="glass-panel"
+                    style="text-align: center; opacity: 0.5; font-size: 0.8rem; border-bottom: none; padding: 20px;">
+                    KMK AI &copy; 2026 | COGNITIVE–CREATIVE–GENERATIVE SOVEREIGNTY | POWERED BY EXCELLENCE
+                </div>
+            </footer>
+        </div>
+        <!-- Sovereign Modal Viewer -->
+        <div id="sovereignModal" class="modal-overlay">
+            <div class="modal-content">
+                <button class="modal-close">×</button>
+                <div id="modalBody" class="dossier-viewer-content">
+                    <!-- Content will be injected here -->
+                </div>
+            </div>
         </div>
 
-        <footer>
-            <div class="glass-panel"
-                style="text-align: center; opacity: 0.5; font-size: 0.8rem; border-bottom: none; padding: 20px;">
-                KMK AI &copy; 2026 | COGNITIVE–CREATIVE–GENERATIVE SOVEREIGNTY | POWERED BY EXCELLENCE
-            </div>
-        </footer>
-    </div>
-    <!-- Sovereign Modal Viewer -->
-    <div id="sovereignModal" class="modal-overlay">
-        <div class="modal-content">
-            <button class="modal-close">×</button>
-            <div id="modalBody" class="dossier-viewer-content">
-                <!-- Content will be injected here -->
-            </div>
-        </div>
-    </div>
-
-    <script src="viewer.js"></script>
+        <script src="viewer.js"></script>
+        <script src="studio.js"></script>
 </body>
 
 </html>
