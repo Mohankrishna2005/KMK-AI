@@ -95,7 +95,8 @@
                         <h2 style="color: var(--kmk-gold)">Governance</h2>
                         <p style="font-size: 0.9rem; margin-bottom: 20px;">The system is governed by the
                             <strong>Sovereign
-                                Truth</strong> ethical directive.</p>
+                                Truth</strong> ethical directive.
+                        </p>
                         <a href="#" class="dossier-card view-reasoning" data-path="../../CONSTITUTION.md"
                             style="display: block; text-align: center; text-decoration: none;">
                             <span style="color: var(--kmk-gold);">System Constitution →</span>
@@ -103,53 +104,54 @@
                     </section>
                 </div>
             </div>
+        </div> <!-- End Command Tab -->
 
-            <div id="studioTab" class="tab-content">
-                <section class="glass-panel">
-                    <h2 style="color: var(--kmk-gold)">Sovereign Generative Engine</h2>
-                    <div class="studio-input-area">
-                        <input type="text" class="studio-input"
-                            placeholder="Execute Sovereign Directive (e.g., Generate 8K Concept for Project Neon)...">
-                        <button class="execute-btn">Execute Directive</button>
-                    </div>
+        <div id="studioTab" class="tab-content">
+            <section class="glass-panel">
+                <h2 style="color: var(--kmk-gold)">Sovereign Generative Engine</h2>
+                <div class="studio-input-area">
+                    <input type="text" class="studio-input"
+                        placeholder="Execute Sovereign Directive (e.g., Generate 8K Concept for Project Neon)...">
+                    <button class="execute-btn">Execute Directive</button>
+                </div>
 
-                    <h3
-                        style="color: var(--kmk-gold); font-size: 0.9rem; text-transform: uppercase; margin-bottom: 20px; opacity: 0.6;">
-                        Sovereign Output Feed</h3>
-                    <div class="asset-grid" id="assetGrid">
-                        <!-- Assets will appear here -->
-                        <div class="asset-card">
-                            <div class="asset-preview">
-                                <span class="asset-placeholder">Awaiting Directive...</span>
-                            </div>
-                            <div class="asset-info">
-                                <h4 class="asset-title">SYSTEM IDLE</h4>
-                                <span class="asset-meta">Engines Hot | GPU Cluster Standby</span>
-                            </div>
+                <h3
+                    style="color: var(--kmk-gold); font-size: 0.9rem; text-transform: uppercase; margin-bottom: 20px; opacity: 0.6;">
+                    Sovereign Output Feed</h3>
+                <div class="asset-grid" id="assetGrid">
+                    <!-- Assets will appear here -->
+                    <div class="asset-card">
+                        <div class="asset-preview">
+                            <span class="asset-placeholder">Awaiting Directive...</span>
+                        </div>
+                        <div class="asset-info">
+                            <h4 class="asset-title">SYSTEM IDLE</h4>
+                            <span class="asset-meta">Engines Hot | GPU Cluster Standby</span>
                         </div>
                     </div>
-                </section>
-            </div>
-
-            <footer>
-                <div class="glass-panel"
-                    style="text-align: center; opacity: 0.5; font-size: 0.8rem; border-bottom: none; padding: 20px;">
-                    KMK AI &copy; 2026 | COGNITIVE–CREATIVE–GENERATIVE SOVEREIGNTY | POWERED BY EXCELLENCE
                 </div>
-            </footer>
-        </div>
-        <!-- Sovereign Modal Viewer -->
-        <div id="sovereignModal" class="modal-overlay">
-            <div class="modal-content">
-                <button class="modal-close">×</button>
-                <div id="modalBody" class="dossier-viewer-content">
-                    <!-- Content will be injected here -->
-                </div>
+            </section>
+        </div> <!-- End Studio Tab -->
+
+        <footer>
+            <div class="glass-panel"
+                style="text-align: center; opacity: 0.5; font-size: 0.8rem; border-bottom: none; padding: 20px;">
+                KMK AI &copy; 2026 | COGNITIVE–CREATIVE–GENERATIVE SOVEREIGNTY | POWERED BY EXCELLENCE
+            </div>
+        </footer>
+    </div>
+    <!-- Sovereign Modal Viewer -->
+    <div id="sovereignModal" class="modal-overlay">
+        <div class="modal-content">
+            <button class="modal-close">×</button>
+            <div id="modalBody" class="dossier-viewer-content">
+                <!-- Content will be injected here -->
             </div>
         </div>
+    </div>
 
-        <script src="viewer.js"></script>
-        <script src="studio.js"></script>
+    <script src="viewer.js"></script>
+    <script src="studio.js"></script>
 </body>
 
 </html>
