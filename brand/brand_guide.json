@@ -1,0 +1,22 @@
+{
+    "brand": "KMK AI",
+    "vision": "Crystallized Intelligence",
+    "visual_hierarchy": {
+        "display_standard": "8K (7680x4320) Ultra-Precision",
+        "pixel_density_target": "500+ PPI",
+        "color_space": "Rec. 2020 / P3 Wide Color Gamut"
+    },
+    "logo_specification": {
+        "geometry": "Equilateral crystalline lattice with 12 primary vertices.",
+        "colors": {
+            "core": "#E5B80B (KMK Gold)",
+            "edge_highlights": "#FFFFFF (Silver Nitrate)",
+            "shadow_anchor": "#000000 (Void)"
+        },
+        "effects": "Real-time ray-traced refraction with 1.52 refractive index (Glass)."
+    },
+    "typography": {
+        "primary": "Cinematic Serif (Custom Weight: 600)",
+        "monospace": "Hyper-legible Matrix (Line-height: 1.6)"
+    }
+}

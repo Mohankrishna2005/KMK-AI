@@ -1,0 +1,58 @@
+:root {
+    --kmk-gold: #E5B80B;
+    --kmk-gold-rgb: 229, 184, 11;
+    --kmk-onyx: #0A0A0A;
+    --kmk-glass: rgba(255, 255, 255, 0.03);
+    --kmk-border: rgba(229, 184, 11, 0.2);
+    --font-cinematic: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+body {
+    background-color: var(--kmk-onyx);
+    color: white;
+    font-family: var(--font-cinematic);
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+}
+
+.sovereign-container {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    padding: 40px;
+}
+
+.glass-panel {
+    background: var(--kmk-glass);
+    backdrop-filter: blur(20px);
+    border: 1px solid var(--kmk-border);
+    border-radius: 4px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.glass-panel:hover {
+    border-color: var(--kmk-gold);
+    transform: translateY(-2px);
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    letter-spacing: -1px;
+    color: var(--kmk-gold);
+    text-transform: uppercase;
+}
+
+.lattice-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: radial-gradient(circle at 50% 50%, rgba(229, 184, 11, 0.05) 0%, transparent 70%);
+    z-index: -1;
+}

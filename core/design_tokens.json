@@ -1,0 +1,28 @@
+{
+  "system": "KMK AI",
+  "version": "1.0.0",
+  "cinematic_standards": {
+    "resolution": {
+      "image": "3840x2160 (4K UHD)",
+      "video": "4096x2160 (True 4K Cinematic)"
+    },
+    "visual_depth": {
+      "lighting_physics": "Ray-traced realism, complex global illumination",
+      "depth_of_field": "Physical lens simulation with bokeh precision",
+      "micro_texture": "High-frequency surface detail, subtle imperfections"
+    },
+    "production_level": "Studio-grade / Broadcast-ready",
+    "color_science": "Log-C / ACES color space pipeline"
+  },
+  "visual_tokens": {
+    "colors": {
+      "primary": "#E5B80B (Cinematic Gold)",
+      "secondary": "#0A0A0A (Pure Onyx)",
+      "accent": "#FFFFFF (Silver Nitrate)"
+    },
+    "typography": {
+      "display": "Premium Serif (Inter / Roboto / Outfit)",
+      "body": "Modern Sans-Serif with high legibility"
+    }
+  }
+}
